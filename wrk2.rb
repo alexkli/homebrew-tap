@@ -14,6 +14,6 @@ class Wrk2 < Formula
   end
 
   test do
-    system "#{bin}/wrk2", "-c", "1", "-t", "1", "-d", "1", "https://example.com/"
+    system "#{bin}/wrk2", "-R", "5", "-c", "1", "-t", "1", "-d", "1", "https://example.com/"
   end
 end
