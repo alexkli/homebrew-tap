@@ -9,6 +9,6 @@ class Bat < Formula
   end
 
   test do
-    assert_match "bat", shell_output("#{bin}/bat -h")
+    assert_match "bat #{version}", shell_output("#{bin}/bat -h")
   end
 end
