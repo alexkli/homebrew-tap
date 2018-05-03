@@ -9,5 +9,10 @@ brew tap alexkli/tap
 
 Then install via:
 ```
+brew install <formula>
+```
+
+or using the tap-specific name if there are conflicts:
+```
 brew install alexkli/tap/<formula>
 ```
