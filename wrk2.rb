@@ -6,7 +6,7 @@ class Wrk2 < Formula
   depends_on "openssl"
 
   def install
-    ENV.j1
+    ENV.deparallelize
     system "make"
     bin.install "wrk"
     # Prevent a conflict between this and original wrk
